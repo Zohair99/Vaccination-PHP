@@ -1,0 +1,177 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e8f5e9;
+  height: 100%; /* Ensures full height of the body */
+  display: flex; /* Uses flexbox to position elements */
+  flex-direction: column; /* Stacks elements vertically */
+}
+
+.header {
+  background-color: #178066;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logout {
+  background-color: #178066;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#logout:hover {
+  background-color: #157a5d;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #178066;
+  color: white;
+  height: 100vh;
+  padding-top: 20px;
+  position: fixed;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar ul li {
+  padding: 15px 25px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-bottom: 1px solid #157a5d;
+}
+
+.sidebar ul li:hover, .sidebar ul .active {
+  background-color: #157a5d;
+}
+
+.main-content {
+  margin-left: 270px;
+  padding: 30px;
+  flex: 1; /* Allow the content area to grow */
+  overflow: auto; /* Ensures scrolling */
+}
+
+h1, h2 {
+  color: #178066;
+  margin-bottom: 1em;
+}
+
+.card, .card-dash {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.card-dash .icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #178066;
+}
+
+.card-dash .number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #157a5d;
+}
+
+.card-dash h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card form input, 
+.card form select, 
+.card form button {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.card form button {
+  background-color: #178066;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card form button:hover {
+  background-color: #157a5d;
+}
+
+.card h2 {
+  color: #178066;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 18px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #178066;
+  color: white;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+footer {
+  background-color: #178066;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  width: 100%;
+  margin-top: auto; 
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+  font-size: 3rem;
+}
